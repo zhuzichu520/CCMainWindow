@@ -5,38 +5,51 @@
 QWidget#TalkWindowClass
 {
     background-color:#ffffff;
-	border:1px solid #eeeeee;
+    border:0
 }
 
 QWidget#frameWidhet{
-	background-color:#ffffff;
-	border-top:1px solid #eeeeee;
-	border-bottom:1px solid #eeeeee;
+   background-color:#ffffff;
+   border:0
 }
 
 QPushButton#sysmin {
-   border-image: url(:/CCMainWindow/Resources/MainWindow/sysbtn_min_normal.png); 
+   border-image: url(:/CCMainWindow/Resources/MainWindow/btn_msg_min.png);
 }
 QPushButton#sysmin:hover {
-   border-image: url(:/CCMainWindow/Resources/MainWindow/sysbtn_min_hover.png); 
+   border-image: url(:/CCMainWindow/Resources/MainWindow/btn_msg_min.png);
 }
 QPushButton#sysmin:pressed {
-   border-image: url(:/CCMainWindow/Resources/MainWindow/sysbtn_min_down.png); 
+     border-image: url(:/CCMainWindow/Resources/MainWindow/btn_msg.png);
+}
+
+QPushButton#sysmax {
+   border-image: url(:/CCMainWindow/Resources/MainWindow/btn_msg_max.png);
+}
+QPushButton#sysmax:hover {
+   border-image: url(:/CCMainWindow/Resources/MainWindow/btn_msg_max.png);
+}
+QPushButton#sysmax:pressed {
+   border-image: url(:/CCMainWindow/Resources/MainWindow/btn_msg.png);
 }
 
 QPushButton#sysclose {
-   border-image: url(:/CCMainWindow/Resources/MainWindow/sysbtn_close_normal.png); 
+   border-image: url(:/CCMainWindow/Resources/MainWindow/btn_msg_close.png);
 }
 QPushButton#sysclose:hover {
-   border-image: url(:/CCMainWindow/Resources/MainWindow/sysbtn_close_hover.png); 
+   border-image: url(:/CCMainWindow/Resources/MainWindow/btn_msg_close.png);
 }
 QPushButton#sysclose:pressed {
-   border-image: url(:/CCMainWindow/Resources/MainWindow/sysbtn_close_down.png); 
+     border-image: url(:/CCMainWindow/Resources/MainWindow/btn_msg.png);
+}
+
+QPushButton#topIcon {
+   border-image: url(:/CCMainWindow/Resources/MainWindow/icon_msg_top.png);
 }
 
 QLabel#nameLabel {
     font-size: 16px;
-    color:#333333;
+    color:#ffffff;
 }
 
 QLabel#signLabel {
@@ -57,96 +70,97 @@ border-bottom-left-radius:4px;
 }
 
 QPushButton#rightSpliterBtn {
-   border-image: url(:/CCMainWindow/Resources/MainWindow/aio_splitbutton_right_normal.png); 
+   border-image: url(:/CCMainWindow/Resources/MainWindow/aio_splitbutton_right_normal.png);
    border-width:0px;
 }
 QPushButton#rightSpliterBtn:hover {
-   border-image: url(:/CCMainWindow/Resources/MainWindow/aio_splitbutton_right_hover.png); 
+   border-image: url(:/CCMainWindow/Resources/MainWindow/aio_splitbutton_right_hover.png);
    border-width:0px;
 }
 QPushButton#rightSpliterBtn:pressed {
-   border-image: url(:/CCMainWindow/Resources/MainWindow/aio_splitbutton_right_down.png); 
+   border-image: url(:/CCMainWindow/Resources/MainWindow/aio_splitbutton_right_down.png);
    border-width:0px;
 }
 
 QPushButton#boldBtn {
-   border-image: url(:/CCMainWindow/Resources/MainWindow/aio_quickbar_sysfont_bold_normal.png); 
+   border-image: url(:/CCMainWindow/Resources/MainWindow/aio_quickbar_sysfont_bold_normal.png);
    border-width:0px;
 }
 QPushButton#boldBtn:hover {
-   border-image: url(:/CCMainWindow/Resources/MainWindow/aio_quickbar_sysfont_bold_highlight.png); 
+   border-image: url(:/CCMainWindow/Resources/MainWindow/aio_quickbar_sysfont_bold_highlight.png);
    border-width:0px;
 }
 QPushButton#boldBtn:pressed {
-   border-image: url(:/CCMainWindow/Resources/MainWindow/aio_quickbar_sysfont_bold_push.png); 
+   border-image: url(:/CCMainWindow/Resources/MainWindow/aio_quickbar_sysfont_bold_push.png);
    border-width:0px;
 }
 
 QPushButton#italBtn {
-   border-image: url(:/CCMainWindow/Resources/MainWindow/aio_quickbar_sysfont_italic_normal.png); 
+   border-image: url(:/CCMainWindow/Resources/MainWindow/aio_quickbar_sysfont_italic_normal.png);
    border-width:0px;
 }
 QPushButton#italBtn:hover {
-   border-image: url(:/CCMainWindow/Resources/MainWindow/aio_quickbar_sysfont_italic_highlight.png); 
+   border-image: url(:/CCMainWindow/Resources/MainWindow/aio_quickbar_sysfont_italic_highlight.png);
    border-width:0px;
 }
 QPushButton#italBtn:pressed {
-   border-image: url(:/CCMainWindow/Resources/MainWindow/aio_quickbar_sysfont_italic_push.png); 
+   border-image: url(:/CCMainWindow/Resources/MainWindow/aio_quickbar_sysfont_italic_push.png);
    border-width:0px;
 }
 
 QPushButton#underBtn {
-   border-image: url(:/CCMainWindow/Resources/MainWindow/aio_quickbar_sysfont_underline_normal.png); 
+   border-image: url(:/CCMainWindow/Resources/MainWindow/aio_quickbar_sysfont_underline_normal.png);
    border-width:0px;
 }
 QPushButton#underBtn:hover {
-   border-image: url(:/CCMainWindow/Resources/MainWindow/aio_quickbar_sysfont_underline_highlight.png); 
+   border-image: url(:/CCMainWindow/Resources/MainWindow/aio_quickbar_sysfont_underline_highlight.png);
    border-width:0px;
 }
 QPushButton#underBtn:pressed {
-   border-image: url(:/CCMainWindow/Resources/MainWindow/aio_quickbar_sysfont_underline_push.png); 
+   border-image: url(:/CCMainWindow/Resources/MainWindow/aio_quickbar_sysfont_underline_push.png);
    border-width:0px;
 }
 
 QPushButton#colorBtn {
-   border-image: url(:/CCMainWindow/Resources/MainWindow/aio_quickbar_sysfont_color_normal.png); 
+   border-image: url(:/CCMainWindow/Resources/MainWindow/aio_quickbar_sysfont_color_normal.png);
    border-width:0px;
 }
 QPushButton#colorBtn:hover {
-   border-image: url(:/CCMainWindow/Resources/MainWindow/aio_quickbar_sysfont_color_highlight.png); 
+   border-image: url(:/CCMainWindow/Resources/MainWindow/aio_quickbar_sysfont_color_highlight.png);
    border-width:0px;
 }
 QPushButton#colorBtn:pressed {
-   border-image: url(:/CCMainWindow/Resources/MainWindow/aio_quickbar_sysfont_color_push.png); 
+   border-image: url(:/CCMainWindow/Resources/MainWindow/aio_quickbar_sysfont_color_push.png);
    border-width:0px;
 }
 
 QToolButton#closeBtn {
-   background-color: rgb(141, 210, 235);
-   color:#ffffff;
+   background-color: #ffffff;
+   color:#333333;
    font-size:12px;
    border-radius:4px;
    padding-right:0px;
+   border: 1px solid #D7D8DB;
 }
 QToolButton#closeBtn:hover {
-   background-color: rgba(141, 210, 235, 150);
+   background-color: #E4E8EF;
 }
 QToolButton#closeBtn:pressed {
-   background-color: rgba(141, 210, 235, 150);
+   background-color: #D3D6DE;
 }
 
 QToolButton#sendBtn {
-   background-color: rgb(141, 210, 235);
+   background-color: #197DFF;
    color:#ffffff;
    font-size:12px;
    border-radius:4px;
    padding-right:20px;
 }
 QToolButton#sendBtn:hover {
-   background-color: rgba(141, 210, 235, 150);
+   background-color: #4996FB;
 }
 QToolButton#sendBtn:pressed {
-   background-color: rgba(141, 210, 235, 150);
+   background-color: #1E74E6;
 }
 
 QToolButton#sendBtn::menu-button {
@@ -164,7 +178,7 @@ QToolButton#sendBtn::menu-arrow {
 }
 
 QPushButton#fontBtn {
-   border-image: url(:/CCMainWindow/Resources/MainWindow/aio_quickbar_font.png); 
+   border-image: url(:/CCMainWindow/Resources/MainWindow/aio_quickbar_font.png);
 }
 QPushButton#fontBtn:hover {
    background-image:url(:/CCMainWindow/Resources/MainWindow/aio_quickbar_font_hover.png);
@@ -180,7 +194,7 @@ QPushButton#fontBtn:pressed, QPushButton#fontBtn:checked {
 }
 
 QPushButton#faceBtn {
-   border-image: url(:/CCMainWindow/Resources/MainWindow/aio_quickbar_face.png); 
+   border-image: url(:/CCMainWindow/Resources/MainWindow/aio_quickbar_face.png);
 }
 QPushButton#faceBtn:hover {
    background-image:url(:/CCMainWindow/Resources/MainWindow/aio_quickbar_face_hover.png);
@@ -196,7 +210,7 @@ QPushButton#faceBtn:pressed, QPushButton#faceBtn:checked {
 }
 
 QPushButton#richfacebtn {
-   border-image: url(:/CCMainWindow/Resources/MainWindow/aio_quickbar_richface.png); 
+   border-image: url(:/CCMainWindow/Resources/MainWindow/aio_quickbar_richface.png);
 }
 QPushButton#richfacebtn:hover {
    background-image:url(:/CCMainWindow/Resources/MainWindow/aio_quickbar_richface_hover.png);
@@ -212,7 +226,7 @@ QPushButton#richfacebtn:pressed {
 }
 
 QPushButton#cutBtn {
-   border-image: url(:/CCMainWindow/Resources/MainWindow/aio_quickbar_cut.png); 
+   border-image: url(:/CCMainWindow/Resources/MainWindow/aio_quickbar_cut.png);
 }
 QPushButton#cutBtn:hover {
    background-image:url(:/CCMainWindow/Resources/MainWindow/aio_quickbar_cut_hover.png);
@@ -228,7 +242,7 @@ QPushButton#cutBtn:pressed, QPushButton#cutBtn:checked {
 }
 
 QPushButton#inputbtn {
-   border-image: url(:/CCMainWindow/Resources/MainWindow/aio_quickbar_inputassist.png); 
+   border-image: url(:/CCMainWindow/Resources/MainWindow/aio_quickbar_inputassist.png);
 }
 QPushButton#inputbtn:hover {
    background-image:url(:/CCMainWindow/Resources/MainWindow/aio_quickbar_inputassist_hover.png);
@@ -244,7 +258,7 @@ QPushButton#inputbtn:pressed {
 }
 
 QPushButton#registerBtn {
-   border-image: url(:/CCMainWindow/Resources/MainWindow/aio_quickbar_register.png); 
+   border-image: url(:/CCMainWindow/Resources/MainWindow/aio_quickbar_register.png);
 }
 QPushButton#registerBtn:hover {
    background-image:url(:/CCMainWindow/Resources/MainWindow/aio_quickbar_register_hover.png);
@@ -261,7 +275,7 @@ QPushButton#registerBtn:pressed {
 
 QPushButton#addtoolbtn {
    background-color:transparent;
-   background-image: url(:/CCMainWindow/Resources/MainWindow/aio_toobar_add.png); 
+   background-image: url(:/CCMainWindow/Resources/MainWindow/aio_toobar_add.png);
    background-position:center;
 }
 QPushButton#addtoolbtn:hover {
@@ -279,7 +293,7 @@ QPushButton#addtoolbtn:pressed {
 
 QPushButton#addhumanBtn {
    background-color:transparent;
-   background-image: url(:/CCMainWindow/Resources/MainWindow/aio_toobar_addhuman.png); 
+   background-image: url(:/CCMainWindow/Resources/MainWindow/aio_toobar_addhuman.png);
    background-position:center;
 }
 QPushButton#addhumanBtn:hover {
@@ -297,7 +311,7 @@ QPushButton#addhumanBtn:pressed {
 
 QPushButton#appBtn {
    background-color:transparent;
-   background-image: url(:/CCMainWindow/Resources/MainWindow/aio_toobar_app.png); 
+   background-image: url(:/CCMainWindow/Resources/MainWindow/aio_toobar_app.png);
    background-position:center;
 }
 QPushButton#appBtn:hover {
@@ -315,7 +329,7 @@ QPushButton#appBtn:pressed {
 
 QPushButton#videoBtn {
    background-color:transparent;
-   background-image: url(:/CCMainWindow/Resources/MainWindow/aio_toobar_report.png); 
+   background-image: url(:/CCMainWindow/Resources/MainWindow/aio_toobar_report.png);
    background-position:center;
 }
 QPushButton#videoBtn:hover {
@@ -333,7 +347,7 @@ QPushButton#videoBtn:pressed {
 
 QPushButton#toolsetBtn {
    background-color:transparent;
-   background-image: url(:/CCMainWindow/Resources/MainWindow/aio_toobar_tool.png); 
+   background-image: url(:/CCMainWindow/Resources/MainWindow/aio_toobar_tool.png);
    background-position:center;
 }
 QPushButton#toolsetBtn:hover {
@@ -350,9 +364,9 @@ QPushButton#toolsetBtn:pressed {
 }
 
 QWidget#rightStackedWidget{
-	background-color:#ffffff;
-	border-top-right-radius:4px;
-	border-bottom-right-radius:4px;
+        background-color:#ffffff;
+        border-top-right-radius:4px;
+        border-bottom-right-radius:4px;
 }
 
 QListView {
@@ -361,9 +375,9 @@ QListView {
 }
 
 QListView::item{
-	border-radius:4px;
-	background-color: transparent;
-	height:44px;
+        border-radius:4px;
+        background-color: transparent;
+        height:44px;
 }
 
 QListView::item:selected {
@@ -386,32 +400,32 @@ QListView::item:hover {
 }
 
 QPushButton#tclosebtn {
-   border-image: url(:/CCMainWindow/Resources/MainWindow/close.png); 
+   border-image: url(:/CCMainWindow/Resources/MainWindow/close.png);
    border-width:0px;
 }
 QPushButton#tclosebtn:hover {
-   border-image: url(:/CCMainWindow/Resources/MainWindow/close-hover.png); 
+   border-image: url(:/CCMainWindow/Resources/MainWindow/close-hover.png);
    border-width:0px;
 }
 QPushButton#tclosebtn:pressed {
-   border-image: url(:/CCMainWindow/Resources/MainWindow/close-hover.png); 
+   border-image: url(:/CCMainWindow/Resources/MainWindow/close-hover.png);
    border-width:0px;
 }
 
 QLabel#msgLabel{
-	color:#333333;
-	font-size:12px;
+        color:#333333;
+        font-size:12px;
 }
 
 QMenu#senMenu {
-	border-image:url(:/CCMainWindow/Resources/MainWindow/menu_bkg.gft.png);
-	border-width: 2px;
+        border-image:url(:/CCMainWindow/Resources/MainWindow/menu_bkg.gft.png);
+        border-width: 2px;
 }
 
 QMenu#senMenu::item {
-	padding: 4px 12px 4px 26px;
+        padding: 4px 12px 4px 26px;
     background-color: #ffffff;
-	height:24px;
+        height:24px;
 }
 
 QMenu#senMenu::item:hover {
@@ -423,7 +437,7 @@ QMenu#senMenu::item:selected {
 }
 
 QMenu#senMenu::icon{
-	width: 24px;
+        width: 24px;
     height: 24px;
 }
 
@@ -441,7 +455,7 @@ QMenu#senMenu::separator {
 }
 
 QMenu#senMenu::indicator {
-	padding: 0px 0px 0px 6px;
+        padding: 0px 0px 0px 6px;
     width: 16px;
     height: 16px;
 }
@@ -475,7 +489,7 @@ QComboBox::down-arrow {
 QComboBox QListView {
     border:1px solid rgb(55, 143, 207);
     selection-background-color: rgb(55, 143, 207);
-	background-color: #ffffff;
+        background-color: #ffffff;
 }
 
 QComboBox QAbstractItemView {
@@ -516,7 +530,7 @@ QComboBox QAbstractItemView {
  QScrollBar::add-line:vertical {
      background:transparent;
  }
- 
+
  QWidget#titleWidget{
-	 border-top:0px;
+         border-top:0px;
  }

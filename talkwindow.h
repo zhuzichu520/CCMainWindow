@@ -67,7 +67,6 @@ private:
 
 public:
 	void setWindowName(const QString& name);
-	void setWindowSignName(const QString& name);
 
 private:
 	void initControl();

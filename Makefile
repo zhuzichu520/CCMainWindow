@@ -428,6 +428,7 @@ DIST          = ../../Qt5.12.11/5.12.11/clang_64/mkspecs/features/spec_pre.prf \
 		../../Qt5.12.11/5.12.11/clang_64/mkspecs/features/qt_config.prf \
 		../../Qt5.12.11/5.12.11/clang_64/mkspecs/macx-clang/qmake.conf \
 		../../Qt5.12.11/5.12.11/clang_64/mkspecs/features/spec_post.prf \
+		.qmake.stash \
 		../../Qt5.12.11/5.12.11/clang_64/mkspecs/features/exclusive_builds.prf \
 		../../Qt5.12.11/5.12.11/clang_64/mkspecs/features/mac/sdk.prf \
 		../../Qt5.12.11/5.12.11/clang_64/mkspecs/features/toolchain.prf \
@@ -752,6 +753,7 @@ Makefile: CCMainWindow.pro ../../Qt5.12.11/5.12.11/clang_64/mkspecs/macx-clang/q
 		../../Qt5.12.11/5.12.11/clang_64/mkspecs/features/qt_config.prf \
 		../../Qt5.12.11/5.12.11/clang_64/mkspecs/macx-clang/qmake.conf \
 		../../Qt5.12.11/5.12.11/clang_64/mkspecs/features/spec_post.prf \
+		.qmake.stash \
 		../../Qt5.12.11/5.12.11/clang_64/mkspecs/features/exclusive_builds.prf \
 		../../Qt5.12.11/5.12.11/clang_64/mkspecs/features/mac/sdk.prf \
 		../../Qt5.12.11/5.12.11/clang_64/mkspecs/features/toolchain.prf \
@@ -959,6 +961,7 @@ Makefile: CCMainWindow.pro ../../Qt5.12.11/5.12.11/clang_64/mkspecs/macx-clang/q
 ../../Qt5.12.11/5.12.11/clang_64/mkspecs/features/qt_config.prf:
 ../../Qt5.12.11/5.12.11/clang_64/mkspecs/macx-clang/qmake.conf:
 ../../Qt5.12.11/5.12.11/clang_64/mkspecs/features/spec_post.prf:
+.qmake.stash:
 ../../Qt5.12.11/5.12.11/clang_64/mkspecs/features/exclusive_builds.prf:
 ../../Qt5.12.11/5.12.11/clang_64/mkspecs/features/mac/sdk.prf:
 ../../Qt5.12.11/5.12.11/clang_64/mkspecs/features/toolchain.prf:
@@ -1043,6 +1046,7 @@ clean: compiler_clean
 
 distclean: clean 
 	-$(DEL_FILE) -r CCMainWindow.app
+	-$(DEL_FILE) .qmake.stash
 	-$(DEL_FILE) Makefile
 
 
@@ -1075,6 +1079,7 @@ qrc_ccmainwindow.cpp: ccmainwindow.qrc \
 		Resources/MainWindow/lv.png \
 		Resources/MainWindow/aio_toobar_addhuman.png \
 		Resources/MainWindow/checkbox_tick_highlight.png \
+		Resources/MainWindow/btn_msg_min.png \
 		Resources/MainWindow/aio_quickbar_inputassist.png \
 		Resources/MainWindow/aio_quickbar_face_hover.png \
 		Resources/MainWindow/list_down.png \
@@ -1137,6 +1142,7 @@ qrc_ccmainwindow.cpp: ccmainwindow.qrc \
 		Resources/MainWindow/btn_close_normal.gft.png \
 		Resources/MainWindow/45.png \
 		Resources/MainWindow/StatusSucceeded.png \
+		Resources/MainWindow/btn_msg_max.png \
 		Resources/MainWindow/aio_quickbar_sysfont_italic_normal.png \
 		Resources/MainWindow/aio_setting_white_normal.png \
 		Resources/MainWindow/emoback.png \
@@ -1144,6 +1150,7 @@ qrc_ccmainwindow.cpp: ccmainwindow.qrc \
 		Resources/MainWindow/sysbtn_min_down.png \
 		Resources/MainWindow/aio_quickbar_richface.png \
 		Resources/MainWindow/main_tabbtn_down.gft.png \
+		Resources/MainWindow/btn_msg_close.png \
 		Resources/MainWindow/aio_toobar_app.png \
 		Resources/MainWindow/aio_toobar_add.png \
 		Resources/MainWindow/aio_setting_white_down.png \
@@ -1152,6 +1159,7 @@ qrc_ccmainwindow.cpp: ccmainwindow.qrc \
 		Resources/MainWindow/arrow.png \
 		Resources/MainWindow/aio_quickbar_sysfont_bold_normal.png \
 		Resources/MainWindow/aio_quickbar_sysfont_underline_normal.png \
+		Resources/MainWindow/icon_msg_top.png \
 		Resources/MainWindow/aio_quickbar_sysfont_color_highlight.png \
 		Resources/MainWindow/aio_quickbar_sysfont_italic_push.png \
 		Resources/MainWindow/aio_quickbar_sysfont_bold_highlight.png \

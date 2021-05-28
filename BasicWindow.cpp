@@ -64,7 +64,7 @@ void BasicWindow::loadStyleSheet(const QString &sheetName)
 		QString b = QString::number(m_colorBackGround.blue());
 
 		qsstyleSheet += QString("QWidget[titleskin=true] {background-color:rgb(%1,%2,%3);border-top-left-radius:4px;border-top-right-radius:4px;}\
-								QWidget[bottomskin=true] {border-top: 1px solid rgba(%1,%2,%3,100);background-color:rgba(%1,%2,%3,50);border-bottom-left-radius:4px;border-bottom-right-radius:4px;}").arg(r).arg(g).arg(b);
+                                QWidget[bottomskin=true] {border-top: 0px solid rgba(23, 109, 220, 1);background-color:rgba(23, 109, 220, 1);border-bottom-left-radius:1px;border-bottom-right-radius:1px;}").arg(r).arg(g).arg(b);
 		this->setStyleSheet(qsstyleSheet);
 	}
 	file.close();

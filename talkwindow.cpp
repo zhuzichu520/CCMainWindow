@@ -213,11 +213,6 @@ void TalkWindow::setWindowName(const QString& name)
 	ui.nameLabel->setText(name);
 }
 
-void TalkWindow::setWindowSignName(const QString& name)
-{
-	ui.signLabel->setText(name);
-}
-
 void TalkWindow::onSignalWindowclosed()
 {
 	close();

@@ -80,7 +80,6 @@ void WindowManager::addNewTalkWindow(const QString& uid)
 		TalkWindowItem* talkwindowItem1 = new TalkWindowItem(talkwindow1);
 		talkwindow1->setWindowName(QStringLiteral("密信通-工作号- %1号").arg(n));
 		talkwindowItem1->setMsgLabelContent(QStringLiteral("密信通-%1号").arg(n));
-		talkwindow1->setWindowSignName(QStringLiteral("欢迎吐槽、密信通-工作号-%1号").arg(n));
 		m_talkwindowshell2->addTalkWindow(talkwindow1, talkwindowItem1);
 	}
 	else

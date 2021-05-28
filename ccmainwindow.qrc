@@ -355,5 +355,9 @@
         <file>Resources/MainWindow/menu/menuitemex_seperatordraw.png</file>
         <file>Resources/MainWindow/menu/mune_select_bkgSetting.png</file>
         <file>Resources/MainWindow/back.png</file>
+        <file>Resources/MainWindow/btn_msg_close.png</file>
+        <file>Resources/MainWindow/btn_msg_max.png</file>
+        <file>Resources/MainWindow/btn_msg_min.png</file>
+        <file>Resources/MainWindow/icon_msg_top.png</file>
     </qresource>
 </RCC>

@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>602</width>
-    <height>439</height>
+    <width>547</width>
+    <height>483</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -16,6 +16,9 @@
   <layout class="QVBoxLayout" name="verticalLayout">
    <property name="spacing">
     <number>0</number>
+   </property>
+   <property name="sizeConstraint">
+    <enum>QLayout::SetDefaultConstraint</enum>
    </property>
    <property name="leftMargin">
     <number>0</number>
@@ -40,13 +43,13 @@
      <property name="minimumSize">
       <size>
        <width>0</width>
-       <height>84</height>
+       <height>50</height>
       </size>
      </property>
      <property name="maximumSize">
       <size>
        <width>16777215</width>
-       <height>84</height>
+       <height>50</height>
       </size>
      </property>
      <property name="bottomskin" stdset="0">
@@ -57,7 +60,7 @@
        <number>0</number>
       </property>
       <property name="leftMargin">
-       <number>6</number>
+       <number>0</number>
       </property>
       <property name="topMargin">
        <number>0</number>
@@ -71,8 +74,39 @@
       <item>
        <layout class="QHBoxLayout" name="horizontalLayout_2">
         <property name="spacing">
-         <number>0</number>
+         <number>15</number>
         </property>
+        <property name="leftMargin">
+         <number>15</number>
+        </property>
+        <property name="rightMargin">
+         <number>15</number>
+        </property>
+        <item>
+         <widget class="QPushButton" name="topIcon">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>25</width>
+            <height>25</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>25</width>
+            <height>25</height>
+           </size>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
         <item>
          <widget class="QLabel" name="nameLabel">
           <property name="sizePolicy">
@@ -101,6 +135,9 @@
           <property name="text">
            <string>密信通-工作号</string>
           </property>
+          <property name="margin">
+           <number>0</number>
+          </property>
          </widget>
         </item>
         <item>
@@ -113,14 +150,14 @@
           </property>
           <property name="minimumSize">
            <size>
-            <width>30</width>
-            <height>27</height>
+            <width>25</width>
+            <height>25</height>
            </size>
           </property>
           <property name="maximumSize">
            <size>
-            <width>30</width>
-            <height>27</height>
+            <width>25</width>
+            <height>25</height>
            </size>
           </property>
           <property name="focusPolicy">
@@ -134,12 +171,43 @@
           </property>
           <property name="iconSize">
            <size>
-            <width>30</width>
-            <height>30</height>
+            <width>20</width>
+            <height>20</height>
            </size>
           </property>
           <property name="checkable">
            <bool>false</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="sysmax">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>25</width>
+            <height>25</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>25</width>
+            <height>25</height>
+           </size>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>20</width>
+            <height>20</height>
+           </size>
           </property>
          </widget>
         </item>
@@ -153,14 +221,14 @@
           </property>
           <property name="minimumSize">
            <size>
-            <width>30</width>
-            <height>27</height>
+            <width>25</width>
+            <height>25</height>
            </size>
           </property>
           <property name="maximumSize">
            <size>
-            <width>30</width>
-            <height>27</height>
+            <width>25</width>
+            <height>25</height>
            </size>
           </property>
           <property name="focusPolicy">
@@ -174,8 +242,8 @@
           </property>
           <property name="iconSize">
            <size>
-            <width>30</width>
-            <height>30</height>
+            <width>20</width>
+            <height>20</height>
            </size>
           </property>
           <property name="checkable">
@@ -193,231 +261,6 @@
          </widget>
         </item>
        </layout>
-      </item>
-      <item>
-       <widget class="QLabel" name="signLabel">
-        <property name="sizePolicy">
-         <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
-          <horstretch>0</horstretch>
-          <verstretch>0</verstretch>
-         </sizepolicy>
-        </property>
-        <property name="minimumSize">
-         <size>
-          <width>0</width>
-          <height>20</height>
-         </size>
-        </property>
-        <property name="maximumSize">
-         <size>
-          <width>16777215</width>
-          <height>20</height>
-         </size>
-        </property>
-        <property name="font">
-         <font>
-          <pointsize>10</pointsize>
-         </font>
-        </property>
-        <property name="text">
-         <string>欢迎吐槽、密信通</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QWidget" name="funWidget" native="true">
-        <property name="sizePolicy">
-         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-          <horstretch>0</horstretch>
-          <verstretch>0</verstretch>
-         </sizepolicy>
-        </property>
-        <property name="minimumSize">
-         <size>
-          <width>0</width>
-          <height>34</height>
-         </size>
-        </property>
-        <property name="maximumSize">
-         <size>
-          <width>16777215</width>
-          <height>600</height>
-         </size>
-        </property>
-        <property name="styleSheet">
-         <string notr="true"/>
-        </property>
-        <layout class="QHBoxLayout" name="horizontalLayout_4">
-         <property name="spacing">
-          <number>8</number>
-         </property>
-         <property name="leftMargin">
-          <number>0</number>
-         </property>
-         <property name="topMargin">
-          <number>0</number>
-         </property>
-         <property name="rightMargin">
-          <number>6</number>
-         </property>
-         <property name="bottomMargin">
-          <number>0</number>
-         </property>
-         <item>
-          <widget class="QPushButton" name="addtoolbtn">
-           <property name="sizePolicy">
-            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-             <horstretch>0</horstretch>
-             <verstretch>0</verstretch>
-            </sizepolicy>
-           </property>
-           <property name="minimumSize">
-            <size>
-             <width>27</width>
-             <height>25</height>
-            </size>
-           </property>
-           <property name="maximumSize">
-            <size>
-             <width>27</width>
-             <height>25</height>
-            </size>
-           </property>
-           <property name="text">
-            <string/>
-           </property>
-           <property name="hasborder" stdset="0">
-            <bool>true</bool>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QPushButton" name="addhumanBtn">
-           <property name="sizePolicy">
-            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-             <horstretch>0</horstretch>
-             <verstretch>0</verstretch>
-            </sizepolicy>
-           </property>
-           <property name="minimumSize">
-            <size>
-             <width>27</width>
-             <height>25</height>
-            </size>
-           </property>
-           <property name="maximumSize">
-            <size>
-             <width>27</width>
-             <height>25</height>
-            </size>
-           </property>
-           <property name="text">
-            <string/>
-           </property>
-           <property name="hasborder" stdset="0">
-            <bool>true</bool>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QPushButton" name="appBtn">
-           <property name="sizePolicy">
-            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-             <horstretch>0</horstretch>
-             <verstretch>0</verstretch>
-            </sizepolicy>
-           </property>
-           <property name="minimumSize">
-            <size>
-             <width>25</width>
-             <height>25</height>
-            </size>
-           </property>
-           <property name="maximumSize">
-            <size>
-             <width>25</width>
-             <height>25</height>
-            </size>
-           </property>
-           <property name="text">
-            <string/>
-           </property>
-           <property name="hasborder" stdset="0">
-            <bool>true</bool>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QPushButton" name="videoBtn">
-           <property name="sizePolicy">
-            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-             <horstretch>0</horstretch>
-             <verstretch>0</verstretch>
-            </sizepolicy>
-           </property>
-           <property name="minimumSize">
-            <size>
-             <width>25</width>
-             <height>25</height>
-            </size>
-           </property>
-           <property name="maximumSize">
-            <size>
-             <width>25</width>
-             <height>25</height>
-            </size>
-           </property>
-           <property name="text">
-            <string/>
-           </property>
-           <property name="hasborder" stdset="0">
-            <bool>true</bool>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QPushButton" name="toolsetBtn">
-           <property name="sizePolicy">
-            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-             <horstretch>0</horstretch>
-             <verstretch>0</verstretch>
-            </sizepolicy>
-           </property>
-           <property name="minimumSize">
-            <size>
-             <width>25</width>
-             <height>25</height>
-            </size>
-           </property>
-           <property name="maximumSize">
-            <size>
-             <width>25</width>
-             <height>25</height>
-            </size>
-           </property>
-           <property name="text">
-            <string/>
-           </property>
-           <property name="hasborder" stdset="0">
-            <bool>true</bool>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <spacer name="horizontalSpacer_3">
-           <property name="orientation">
-            <enum>Qt::Horizontal</enum>
-           </property>
-           <property name="sizeHint" stdset="0">
-            <size>
-             <width>40</width>
-             <height>20</height>
-            </size>
-           </property>
-          </spacer>
-         </item>
-        </layout>
-       </widget>
       </item>
      </layout>
     </widget>
@@ -770,16 +613,16 @@
            </property>
            <layout class="QHBoxLayout" name="moduleLayout">
             <property name="spacing">
-             <number>8</number>
+             <number>15</number>
             </property>
             <property name="leftMargin">
-             <number>8</number>
+             <number>15</number>
             </property>
             <property name="topMargin">
              <number>0</number>
             </property>
             <property name="rightMargin">
-             <number>8</number>
+             <number>15</number>
             </property>
             <property name="bottomMargin">
              <number>0</number>
@@ -794,14 +637,14 @@
               </property>
               <property name="minimumSize">
                <size>
-                <width>20</width>
-                <height>20</height>
+                <width>25</width>
+                <height>25</height>
                </size>
               </property>
               <property name="maximumSize">
                <size>
-                <width>20</width>
-                <height>20</height>
+                <width>25</width>
+                <height>25</height>
                </size>
               </property>
               <property name="text">
@@ -825,14 +668,14 @@
               </property>
               <property name="minimumSize">
                <size>
-                <width>20</width>
-                <height>20</height>
+                <width>25</width>
+                <height>25</height>
                </size>
               </property>
               <property name="maximumSize">
                <size>
-                <width>20</width>
-                <height>20</height>
+                <width>25</width>
+                <height>25</height>
                </size>
               </property>
               <property name="text">
@@ -856,14 +699,14 @@
               </property>
               <property name="minimumSize">
                <size>
-                <width>20</width>
-                <height>20</height>
+                <width>25</width>
+                <height>25</height>
                </size>
               </property>
               <property name="maximumSize">
                <size>
-                <width>20</width>
-                <height>20</height>
+                <width>25</width>
+                <height>25</height>
                </size>
               </property>
               <property name="text">
@@ -884,14 +727,14 @@
               </property>
               <property name="minimumSize">
                <size>
-                <width>20</width>
-                <height>20</height>
+                <width>25</width>
+                <height>25</height>
                </size>
               </property>
               <property name="maximumSize">
                <size>
-                <width>20</width>
-                <height>20</height>
+                <width>25</width>
+                <height>25</height>
                </size>
               </property>
               <property name="text">
@@ -912,14 +755,14 @@
               </property>
               <property name="minimumSize">
                <size>
-                <width>20</width>
-                <height>20</height>
+                <width>25</width>
+                <height>25</height>
                </size>
               </property>
               <property name="maximumSize">
                <size>
-                <width>20</width>
-                <height>20</height>
+                <width>25</width>
+                <height>25</height>
                </size>
               </property>
               <property name="text">
@@ -953,14 +796,14 @@
               </property>
               <property name="minimumSize">
                <size>
-                <width>20</width>
-                <height>20</height>
+                <width>25</width>
+                <height>25</height>
                </size>
               </property>
               <property name="maximumSize">
                <size>
-                <width>20</width>
-                <height>20</height>
+                <width>25</width>
+                <height>25</height>
                </size>
               </property>
               <property name="text">
